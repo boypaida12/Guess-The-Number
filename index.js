@@ -1,5 +1,5 @@
 let randomNum = Math.floor(Math.random() * 100 + 1);
-console.log(randomNum)
+// console.log(randomNum)
 let play = document.getElementById('play');
 let display = document.getElementById('display');
 let restart = document.getElementById('restart');
@@ -53,5 +53,5 @@ function restartGame(event) {
     document.body.style.setProperty('--after-filter', '100%');
 }
 
-console.log(headingColor)
+// console.log(headingColor)
    
