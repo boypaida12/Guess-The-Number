@@ -165,8 +165,6 @@ input:focus {
 
 .win input:focus {
     outline: 2px solid #a4a4ff;
-    /* border: 0px;
-    border-radius: 0.5rem; */
 }
 
 button {
@@ -249,6 +247,7 @@ button:focus {
         font-size: 1rem;
     }
 }
+
 @media screen and (min-width:768px) and (max-width:1023px) {
     .game-container {
         width: 93%;
