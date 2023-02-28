@@ -1,12 +1,9 @@
 let randomNum = Math.floor(Math.random() * 100 + 1);
-// console.log(randomNum)
+console.log(randomNum)
 let play = document.getElementById('play');
 let display = document.getElementById('display');
 let restart = document.getElementById('restart');
-let headingColor = document.getElementById('heading');
-let backdropChange = document.getElementById('gameContainer');
-let buttonColorOne = document.getElementById('play');
-let buttonColorTwo = document.getElementById('restart');
+let headingChange = document.getElementById('heading')
 
 
 
@@ -17,13 +14,9 @@ function guessTheNumber(event){
     let tooClose = 5;
 
     if(input === randomNum){
-        display.innerHTML = 'You are a winner!!🤪';
-        display.classList.add('winner');
+        display.innerHTML = 'You freed Purple Wiz!!🤩';
+        headingChange.innerHTML ='Welcome, Purple Wiz!';
         document.body.classList.add('win'); 
-        headingColor.classList.add('heading-color');
-        backdropChange.classList.add('backdrop-change');
-        buttonColorOne.classList.add('btn-win');
-        buttonColorTwo.classList.add('btn-win');
     }else if(input < 1 || input > 100){
         display.innerHTML = "OUT OF RANGE 😒"
     }else if(input < randomNum && (randomNum - input <= tooClose)) {
