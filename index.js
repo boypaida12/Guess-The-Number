@@ -15,7 +15,7 @@ function guessTheNumber(event){
 
     if(input === randomNum){
         display.innerHTML = 'You freed Purple Wiz!!🤩';
-        headingChange.innerHTML ='Welcome, Purple Wiz!';
+        headingChange.innerHTML ='Purple Wiz says Thank You!';
         document.body.classList.add('win'); 
     }else if(input < 1 || input > 100){
         display.innerHTML = "OUT OF RANGE 😒"

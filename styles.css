@@ -54,6 +54,7 @@ h1 {
     color: rgba(255, 255, 255, 0.842);
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 }
   
 .win #display {
@@ -103,6 +104,7 @@ h1 {
     color: rgba(255, 255, 255, 0.842);
     background-color: rgba(86, 86, 86, 0.708);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border: 8px solid rgba(0, 0, 0, 0.688);
     border-radius: 1rem;
     box-shadow: 2px 7px 20px 2px rgba(0, 0, 0, 0.6);
@@ -133,7 +135,6 @@ p,
 input {
     margin-bottom: 2rem;
 }
-
 
 input {
     height: 3.5rem;
