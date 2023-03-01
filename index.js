@@ -18,7 +18,8 @@ function guessTheNumber(event){
         headingChange.innerHTML ='Purple Wiz says Thank You!';
         document.body.classList.add('win'); 
     }else if(input < 1 || input > 100){
-        display.innerHTML = "OUT OF RANGE 😒"
+        display.innerHTML = "OUT OF RANGE 😒";
+        document.body.style.setProperty('--after-filter', '100%');
     }else if(input < randomNum && (randomNum - input <= tooClose)) {
         display.innerHTML = 'Very close!, but you are a little low 😲';
         document.body.style.setProperty('--after-filter', '50%');
