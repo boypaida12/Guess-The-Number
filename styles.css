@@ -46,7 +46,7 @@ h1 {
 }
 
 .win h1 {
-    color: #a4a4ff;
+    color: rgb(148, 156, 255);
     filter: saturate(120%);
 }
 
@@ -58,7 +58,7 @@ h1 {
 }
   
 .win #display {
-    color: #a4a4ff;
+    color: rgb(148, 156, 255);
     filter: saturate(120%);
     animation: blink-1 1500ms infinite both;
 }
@@ -114,10 +114,10 @@ h1 {
 
 .win .game-container {
     background-color: rgba(210, 210, 210, 0.708);
-    border-color: #9797ff;
-    box-shadow: 2px 7px 20px 5px #a4a4ff;
-    -webkit-box-shadow: 2px 7px 20px 5px #a4a4ff;
-    -moz-box-shadow: 2px 7px 20px 5px #a4a4ff;
+    border-color: rgb(148, 156, 255);
+    box-shadow: 2px 7px 20px 5px rgb(148, 156, 255);
+    -webkit-box-shadow: rgb(148, 156, 255);
+    -moz-box-shadow: 2px 7px 20px 5px rgb(148, 156, 255);;
 }
 
 .wiz-emoji {
@@ -151,11 +151,11 @@ input {
 }
 
 .win input {
-    color: #a4a4ff;
-    border-color: #a4a4ff;
-    box-shadow: 2px 7px 13px 2px #a4a4ff;
-    -webkit-box-shadow: 0px 4px 1px 2px #a4a4ff;
-    -moz-box-shadow: 2px 7px 13px 2px #a4a4ff;
+    color: rgb(148, 156, 255);
+    border-color: rgb(148, 156, 255);
+    box-shadow: 2px 7px 13px 2px rgb(148, 156, 255);
+    -webkit-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+    -moz-box-shadow: 2px 7px 13px 2px rgb(148, 156, 255);
 }
 
 input:focus {
@@ -165,7 +165,7 @@ input:focus {
 }
 
 .win input:focus {
-    outline: 2px solid #a4a4ff;
+    outline: 2px solid rgb(148, 156, 255);
 }
 
 button {
@@ -185,11 +185,11 @@ button {
 }
 
 .win button {
-    border: 3px solid #9797f8;
-    color: rgba(64, 3, 110);
-    box-shadow: 2px 7px 13px 2px #9797f8;
-    -webkit-box-shadow: 0px 4px 1px 2px #9797f8;
-    -moz-box-shadow: 2px 7px 13px 2px #9797f8;
+    border: 3px solid rgb(148, 156, 255);;
+    color: rgb(148, 156, 255);
+    box-shadow: 2px 7px 13px 2px rgb(148, 156, 255);;
+    -webkit-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);;
+    -moz-box-shadow: 2px 7px 13px 2px rgb(148, 156, 255);;
 }
 
 button:hover,
@@ -200,14 +200,180 @@ button:focus {
 
 .win button:hover,
 .win button:focus {
-    background-color: #9797f8;
-    /* border-color: transparent; */
+    color: rgba(210, 210, 210, 0.708);
+    background-color: rgb(148, 156, 255);
 }
 
 .buttons {
     text-align: center;
 }
 
+.how-to-play {
+    /* display: inline-flex; */
+    gap: 15rem;
+    position: absolute;
+    top: 2rem;
+    right: 5%;
+}
+
+.how-to-play p {
+    padding: .5rem;
+    border: 2px solid black;
+    border-radius: .5rem; 
+    background-color: rgba(111, 111, 111, 0.621);
+    color: rgba(246, 245, 245, 0.954);
+    font-size: 1.15rem;
+     box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+    -webkit-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+    -moz-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+}
+
+.win .how-to-play p {
+    color: rgb(148, 156, 255);
+    border-color: rgb(148, 156, 255);
+    background-color: rgba(255, 255, 255, 0.975);
+    box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+    -webkit-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+    -moz-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+}
+
+.how-to-play p:first-child {
+    position: absolute;
+    left: -247%;
+    top: 9rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: none;
+    /* box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+    -webkit-box-shadow: 0px 3px 1px 1px rgba(31, 31, 31, 0.93);
+    -moz-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);  */
+    transition: all 0.2s ease-in-out;
+}
+
+.win .how-to-play p:first-child {
+    border: none;
+    box-shadow: none;
+}
+
+.how-to-play p:first-child:hover {
+    box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+    -webkit-box-shadow: 0px 3px 1px 2px rgba(44, 44, 44, 0.93);
+    -moz-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+}
+
+.win .how-to-play p:first-child:hover {
+    box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+    -webkit-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+    -moz-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
+}
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
+	        animation: pulsate-bck 1s ease-in-out 1s infinite both;
+}
+
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+
+
+/* Instructions */
+.instructions-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(20px);
+    z-index: 1000;   
+}
+
+.instructions {
+    position: absolute;
+    top: 15rem;
+    left: 25rem;
+    background-color: rgba(255, 255, 255, 0.897);
+    width: 45%;
+    padding: 1.5rem;
+    line-height: 1.8;
+    filter: grayscale(100%);
+    border-radius: 1rem;
+    box-shadow: 2px 7px 20px 5px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 2px 7px 30px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 2px 7px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.slide-in-fwd-top {
+	-webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-fwd-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@-webkit-keyframes slide-in-fwd-top {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(-800px);
+              transform: translateZ(-1400px) translateY(-800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-top {
+    0% {
+      -webkit-transform: translateZ(-1400px) translateY(-800px);
+              transform: translateZ(-1400px) translateY(-800px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+.instructions p {
+    margin-bottom: .25rem;
+}
+
+.instructions-center {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+/* Mobile Responsiveness */
 @media screen and (max-width:425px) {
     body::after {
         top: 3rem;
