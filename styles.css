@@ -220,8 +220,8 @@ button:focus {
     padding: .5rem;
     border: 2px solid black;
     border-radius: .5rem; 
-    background-color: rgba(111, 111, 111, 0.621);
-    color: rgba(246, 245, 245, 0.954);
+    background-color: transparent;
+    color: rgba(86, 86, 86, 0.708);
     font-size: 1.15rem;
      box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
     -webkit-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
@@ -246,10 +246,8 @@ button:focus {
     border-radius: .5rem;
     border: none;
     box-shadow: none;
-    /* box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
-    -webkit-box-shadow: 0px 3px 1px 1px rgba(31, 31, 31, 0.93);
-    -moz-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);  */
     transition: all 0.2s ease-in-out;
+    font-weight: 700;
 }
 
 .win .how-to-play p:first-child {
@@ -258,19 +256,12 @@ button:focus {
 }
 
 .how-to-play p:first-child:hover {
-    box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
-    -webkit-box-shadow: 0px 3px 1px 2px rgba(44, 44, 44, 0.93);
-    -moz-box-shadow: 0px 4px 1px 2px rgba(31, 31, 31, 0.93);
+    animation: none;
 }
 
-.win .how-to-play p:first-child:hover {
-    box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
-    -webkit-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
-    -moz-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
-}
 .pulsate-bck {
-	-webkit-animation: pulsate-bck 1s ease-in-out infinite both;
-	        animation: pulsate-bck 1s ease-in-out 1s infinite both;
+	-webkit-animation: pulsate-bck 1s ease-in-out 600ms infinite both;
+	animation: pulsate-bck 1s ease-in-out 600ms infinite both;
 }
 
 @-webkit-keyframes pulsate-bck {
