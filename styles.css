@@ -114,6 +114,7 @@ h1 {
     box-shadow: 2px 7px 20px 2px rgba(0, 0, 0, 0.6);
 -webkit-box-shadow: 2px 7px 20px 5px rgba(0, 0, 0, 0.6);
 -moz-box-shadow: 2px 7px 20px 2px rgba(0, 0, 0, 0.6);
+
 }
 
 .win .game-container {
@@ -152,6 +153,12 @@ input {
     box-shadow: 2px 7px 13px 2px rgba(0, 0, 0, 0.747);
     -webkit-box-shadow: 0px 4px 1px 2px rgba(0, 0, 0, 0.747);
     -moz-box-shadow: 2px 7px 13px 2px rgba(0, 0, 0, 0.747);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.33);
+    font-size: clamp(1.25rem, -1.0238rem + 7.619vw, 1.5rem);
+
 }
 
 .win input {
@@ -239,7 +246,7 @@ button:focus {
     -moz-box-shadow: 0px 4px 1px 2px rgb(148, 156, 255);
 }
 
-.how-to-play p:first-child {
+.how-to-play p:first-child, .win .how-to-play p:first-child {
     position: absolute;
     left: -247%;
     top: 9rem;
@@ -250,11 +257,6 @@ button:focus {
     box-shadow: none;
     transition: all 0.2s ease-in-out;
     font-weight: 700;
-}
-
-.win .how-to-play p:first-child {
-    border: none;
-    box-shadow: none;
 }
 
 .how-to-play p:first-child:hover {
