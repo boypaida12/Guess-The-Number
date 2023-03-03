@@ -209,8 +209,6 @@ button:focus {
 }
 
 .how-to-play {
-    /* display: inline-flex; */
-    gap: 15rem;
     position: absolute;
     top: 2rem;
     right: 5%;
@@ -367,7 +365,8 @@ button:focus {
 /* Mobile Responsiveness */
 @media screen and (max-width:425px) {
     body::after {
-        top: 3rem;
+        top: 5rem;
+        background-size: 100vw;
     }
 
     .game-container {
@@ -404,6 +403,27 @@ button:focus {
         margin-top: 1rem;
         font-size: 1rem;
     }
+
+    .how-to-play {
+        top: 2%;
+    }
+
+    .how-to-play p, .how-to-play p:first-child {
+        font-size: clamp(0.5rem, -1.0238rem + 7.619vw, 1rem);
+    }
+
+    .how-to-play p:first-child {
+        left: -10rem;
+        top: 0;
+    }
+
+    .instructions {
+    top: 15rem;
+    left: 1.5rem;
+    width: 90%;
+    text-align: center;
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -412,11 +432,34 @@ button:focus {
         height: 52%;
         top: 45%;
     }
+
+    .how-to-play p:first-child {
+        left: -28rem;
+        top: 0;
+    }
+
+    .instructions {
+    top: 15rem;
+    left: 7rem;
+    width: 70%;
+    }
 }
+
 @media screen and (min-width:1024px) and (max-width:1344px) {
     .game-container {
         width: 48%;
     }
+
+    .how-to-play p:first-child {
+        left: -22.5rem;
+        top: 7rem;
+    }
+
+    .instructions {
+    top: 15rem;
+    left: 15rem;
+    width: 50%;
+}
 }
 
 
