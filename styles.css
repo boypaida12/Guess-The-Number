@@ -117,6 +117,10 @@ h1 {
 
 }
 
+.game-container-sm {
+    display: none;
+}
+
 .win .game-container {
     background-color: rgba(210, 210, 210, 0.708);
     border-color: rgb(148, 156, 255);
@@ -378,8 +382,8 @@ button:focus {
 
     .game-container {
         width: 93%;
-        height: 55%;
-        top: 40%;
+        height: 40%;
+        top: 35vh;
     }
 
     h1,
@@ -394,7 +398,7 @@ button:focus {
     }
 
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .wiz-emoji {
@@ -425,7 +429,7 @@ button:focus {
     }
 
     .instructions {
-    top: 1rem;
+    top: 5rem;
     left: 1.5rem;
     width: 90%;
     text-align: center;
@@ -440,6 +444,7 @@ button:focus {
     }
 
     .game-container {
+        position: fixed;
         width: 93%;
         height: 52%;
         top: 45%;
