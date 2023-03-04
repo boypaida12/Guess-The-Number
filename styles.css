@@ -305,7 +305,6 @@ button:focus {
 
 /* Instructions */
 .instructions-overlay {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -317,10 +316,14 @@ button:focus {
     z-index: 1000;   
 }
 
+.instructions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .instructions {
-    position: absolute;
-    top: 15rem;
-    left: 25rem;
     background-color: rgba(255, 255, 255, 0.897);
     width: 45%;
     padding: 1.5rem;
@@ -429,6 +432,7 @@ button:focus {
     }
 
     .instructions {
+    position: absolute;
     top: 5rem;
     left: 1.5rem;
     width: 90%;
@@ -456,6 +460,7 @@ button:focus {
     }
 
     .instructions {
+    position: absolute;
     top: 15rem;
     left: 7rem;
     width: 70%;
@@ -479,6 +484,7 @@ button:focus {
     }
 
     .instructions {
+    position: absolute;
     top: 15rem;
     left: 15rem;
     width: 50%;
