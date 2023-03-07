@@ -1,6 +1,5 @@
 let randomNum = Math.floor(Math.random() * 100 + 1);
 let tooClose = 5;
-console.log(randomNum)
 let play = document.getElementById('play');
 let display = document.getElementById('display');
 let restart = document.getElementById('restart');
@@ -71,9 +70,7 @@ function restartGame(event) {
     event.preventDefault()
     randomNum = Math.floor(Math.random() * 100 + 1);
     document.body.classList.remove('win');
-    // headingColor.classList.remove('heading-color');
     document.body.style.setProperty('--after-filter', '100%');
 }
 
-// console.log(headingColor)
    

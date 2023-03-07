@@ -309,7 +309,6 @@ button:focus {
 
 /* Instructions */
 .instructions-overlay {
-    /* display: block; */
     position: fixed;
     top: 0;
     left: 0;
