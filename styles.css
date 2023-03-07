@@ -14,8 +14,8 @@ body {
     align-items: center;
     width: fit-content;
     margin-inline: auto;
-    padding-inline: auto;
     overflow-x: scroll;
+    /* border: 1px solid red; */
 }
 
 .main-container {
@@ -25,14 +25,17 @@ body {
     width: fit-content;
     position: relative;
     margin-inline: auto;
-    height: 800px;
+    height: 500px;
 }
+
 .image-container {
     width: fit-content;
 }
+
 img {
     filter: grayscale(var(--after-filter, 100%));
     z-index: -1;
+    max-width: 60rem;
 }
 
 .win img {
@@ -52,7 +55,8 @@ img {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
+    text-align: center;
 }
 
 .win h1 {
@@ -62,13 +66,13 @@ h1 {
 
 #display {
     color: rgba(255, 255, 255, 0.842);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     text-align: center;
 }
   
 .win #display {
-    color: rgb(148, 156, 255);
+    color: rgb(108, 118, 255);
     filter: saturate(120%);
     animation: blink-1 1500ms infinite both;
 }
@@ -96,17 +100,13 @@ h1 {
     }
   }
 
-h1 {
-    font-size: 2.75rem;
-    text-align: center;
-}
-
 .game-container {
-    width: 38rem;
-    height: 40rem;
+    width: 28rem;
+    height: fit-content;
     position: absolute;
-    top: 6rem;
-    right: 6rem;
+    top: 0rem;
+    right: 2rem;
+    padding-block: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,8 +149,8 @@ input {
 }
 
 input {
-    height: 3.5rem;
-    width: 25rem;
+    height: 3.25rem;
+    width: 20rem;
     background-color: transparent;
     font-size: 2rem;
     border-color: rgb(0, 0, 0);
@@ -188,7 +188,7 @@ input:focus {
 
 button {
     padding: .5rem 1rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     border-radius: .5rem;
     cursor: pointer;
     transition: all 200ms;
@@ -196,7 +196,7 @@ button {
     border: 3px solid rgb(0, 0, 0);
     margin-inline: .5rem;
     color: rgba(255, 255, 255, 0.842);
-    margin-top: 4rem;
+    margin-top: 1rem;
     box-shadow: 2px 7px 13px 2px rgba(0, 0, 0, 0.513);
     -webkit-box-shadow: 0px 4px 1px 2px rgba(0, 0, 0, 0.93);
     -moz-box-shadow: 2px 7px 13px 2px rgba(0, 0, 0, 0.513);
@@ -227,14 +227,13 @@ button:focus {
 }
 
 .how-to-play {
-    top: 2rem;
     z-index: 1;
 }
 
 .how-to-play p {
     position: absolute;
-    top: 2rem;
-    right: 7.5rem;
+    top: -4.5rem;
+    right: 3rem;
     padding: .5rem;
     border: 2px solid black;
     border-radius: .5rem; 
@@ -256,9 +255,9 @@ button:focus {
 
 .how-to-play p:first-child, .win .how-to-play p:first-child {
     position: absolute;
-    right: 46.75rem;
-    top: 10.75rem;
-    font-size: 1.25rem;
+    right: 30.75rem;
+    top: 4.75rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: .5rem;
     border: none;
@@ -269,7 +268,7 @@ button:focus {
 }
 
 .how-to-play p:first-child:hover {
-    animation: none;
+    animation-play-state: paused;
 }
 
 .pulsate-bck {
@@ -310,7 +309,7 @@ button:focus {
 
 /* Instructions */
 .instructions-overlay {
-    display: block;
+    /* display: block; */
     position: fixed;
     top: 0;
     left: 0;
@@ -388,28 +387,15 @@ button:focus {
 
 
 /* Mobile Responsiveness */
-@media screen and (max-width:1023px) {
-    body {
-        position: relative;
-    }
-
-    .main-container {
-        max-width: 90vw;
-        display: block;
-        padding-inline: 0;
-        
-    }
-
+@media screen and (max-width:425px) {
     img {
-        max-width: 100vw;
-        margin-top: 5rem;
         transform: translateX(-1rem);
     }
 
     .game-container {
         width: 100%;
         height: 20%;
-        top: 20rem;
+        top: 19rem;
         z-index: 1;
         left: 0;
     }
@@ -418,14 +404,9 @@ button:focus {
         font-size: 1.5rem;
         text-align: start;
         position: absolute;
-        top: 1.5rem;
-        left: 3rem;
-        width: 40%;
-    }
-
-    h1 ,
-    .wiz-emoji {
-        display: none;
+        top: 1rem;
+        left: 2.5rem;
+        width: 45%;
     }
 
     input {
@@ -444,7 +425,7 @@ button:focus {
         position: absolute;
         font-size: 2rem;
         background-color: black;
-        top: 8rem;
+        top: 10rem;
     }
 
     .win button {
@@ -460,17 +441,81 @@ button:focus {
     }
 
     .how-to-play p{
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 18px, 1.5rem);
         width: 90vw;
         right: 0;
         text-align: center;
-        top: 0;
+        top: 1rem;
     }
 
     .how-to-play p:first-child {
         display: none;
     }
 
+    .totem {
+        top: 0;
+        font-size: 10rem;
+    }
+
+}
+
+@media screen and (min-width:461px) and (max-width:960px) {
+    .game-container {
+        width: 50%;
+        top: 17%;
+        right: -1.5rem;
+    }
+
+    img {
+        transform: translateX(-1.5rem);
+    }
+
+    .how-to-play p {
+        top: 5rem;
+        right: 0;
+        font-size: 1rem;
+    }
+
+    .totem {
+        font-size: 20rem;
+        top: 8rem;
+        left: 3rem;      
+    }
+
+    input {
+        width: 90%;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:960px) {
+    body {
+        position: relative;
+    }
+
+    .main-container {
+        max-width: 90vw;
+        display: block;
+        padding-inline: 0;
+        height: 800px;
+    }
+
+    .game-container {
+        padding-inline: .75rem;
+    }
+
+    img {
+        max-width: 100vw;
+        margin-top: 5rem;
+    }
+    
+    h1 ,
+    .wiz-emoji,
+    .how-to-play p:first-child {
+        display: none;
+    }
+
+    
    .instructions-center {
         font-size: 1.5rem;
         font-weight: 700;
@@ -485,7 +530,7 @@ button:focus {
     }
 
     .sad-emoji {
-        font-size: 4rem !important;
+        font-size: 8vw !important;
     }
 
     .totem-overlay {
@@ -510,13 +555,13 @@ button:focus {
     }
 
     .totem {
-        font-size: 10rem;
         position: absolute;
-        top: 0;
         text-align: center;
         display: block;
         
     }
 
 }
+
+
 
